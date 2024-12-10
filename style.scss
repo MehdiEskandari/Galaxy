@@ -59,7 +59,7 @@ body {
     @for $item from 0 to $planet-count {
       &:nth-child(#{$item}) {
         width: #{$item * 10}rem;
-        height: #{$item * 9}rem; // 2, 5, 8, 9
+        height: #{$item * 2}rem; // 2, 5, 8, 9
         background: map-get($initial-mode, ring);
         animation: circulate #{$item * $rotation-speed}s linear infinite;
         z-index: #{$planet-count - $item};
