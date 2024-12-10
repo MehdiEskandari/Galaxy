@@ -1,0 +1,79 @@
+// Themes
+$theme-dark: (
+  background: #000000,
+  ring: rgba(255, 0, 0, 0.03),
+  planet: #deff36,
+);
+
+$theme-light: (
+  background: #ffffff,
+  ring: transparent,
+  planet: #000000,
+);
+
+// Settings
+$initial-mode: $theme-dark;
+$initial-size: 0.1;
+
+// Additional Config
+$rotation-speed: 0.3;
+$border-radius: 50%;
+
+// Planets
+$planet-count: 64;
+
+// Basic
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: map-get($initial-mode, background);
+}
+
+// Keyframe animation
+@keyframes circulate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Project
+#galaxy {
+  display: grid;
+  place-items: center;
+  position: relative;
+  border-radius: $border-radius;
+  transform: scale($initial-size);
+
+  // span.class, span#apple, span:hover
+  span {
+    display: block;
+    position: absolute;
+    border: 3px solid #000000;
+    border-radius: $border-radius;
+
+    @for $item from 0 to $planet-count {
+      &:nth-child(#{$item}) {
+        width: #{$item * 10}rem;
+        height: #{$item * 9}rem; // 2, 5, 8, 9
+        background: map-get($initial-mode, ring);
+        animation: circulate #{$item * $rotation-speed}s linear infinite;
+        z-index: #{$planet-count - $item};
+      }
+
+      &#planet-#{$item}::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        border: 1rem solid map-get($initial-mode, planet);
+        border-radius: $border-radius;
+        z-index: 1;
+      }
+    }
+  }
+}

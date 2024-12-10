@@ -1,0 +1,1052 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #000000;
+}
+
+@keyframes circulate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#galaxy {
+  display: grid;
+  place-items: center;
+  position: relative;
+  border-radius: 50%;
+  transform: scale(0.1);
+}
+#galaxy span {
+  display: block;
+  position: absolute;
+  border: 3px solid #000000;
+  border-radius: 50%;
+}
+#galaxy span:nth-child(0) {
+  width: 0rem;
+  height: 0rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 0s linear infinite;
+  z-index: 64;
+}
+#galaxy span#planet-0::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(1) {
+  width: 10rem;
+  height: 9rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 0.3s linear infinite;
+  z-index: 63;
+}
+#galaxy span#planet-1::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(2) {
+  width: 20rem;
+  height: 18rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 0.6s linear infinite;
+  z-index: 62;
+}
+#galaxy span#planet-2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(3) {
+  width: 30rem;
+  height: 27rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 0.9s linear infinite;
+  z-index: 61;
+}
+#galaxy span#planet-3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(4) {
+  width: 40rem;
+  height: 36rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 1.2s linear infinite;
+  z-index: 60;
+}
+#galaxy span#planet-4::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(5) {
+  width: 50rem;
+  height: 45rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 1.5s linear infinite;
+  z-index: 59;
+}
+#galaxy span#planet-5::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(6) {
+  width: 60rem;
+  height: 54rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 1.8s linear infinite;
+  z-index: 58;
+}
+#galaxy span#planet-6::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(7) {
+  width: 70rem;
+  height: 63rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 2.1s linear infinite;
+  z-index: 57;
+}
+#galaxy span#planet-7::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(8) {
+  width: 80rem;
+  height: 72rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 2.4s linear infinite;
+  z-index: 56;
+}
+#galaxy span#planet-8::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(9) {
+  width: 90rem;
+  height: 81rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 2.7s linear infinite;
+  z-index: 55;
+}
+#galaxy span#planet-9::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(10) {
+  width: 100rem;
+  height: 90rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 3s linear infinite;
+  z-index: 54;
+}
+#galaxy span#planet-10::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(11) {
+  width: 110rem;
+  height: 99rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 3.3s linear infinite;
+  z-index: 53;
+}
+#galaxy span#planet-11::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(12) {
+  width: 120rem;
+  height: 108rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 3.6s linear infinite;
+  z-index: 52;
+}
+#galaxy span#planet-12::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(13) {
+  width: 130rem;
+  height: 117rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 3.9s linear infinite;
+  z-index: 51;
+}
+#galaxy span#planet-13::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(14) {
+  width: 140rem;
+  height: 126rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 4.2s linear infinite;
+  z-index: 50;
+}
+#galaxy span#planet-14::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(15) {
+  width: 150rem;
+  height: 135rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 4.5s linear infinite;
+  z-index: 49;
+}
+#galaxy span#planet-15::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(16) {
+  width: 160rem;
+  height: 144rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 4.8s linear infinite;
+  z-index: 48;
+}
+#galaxy span#planet-16::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(17) {
+  width: 170rem;
+  height: 153rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 5.1s linear infinite;
+  z-index: 47;
+}
+#galaxy span#planet-17::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(18) {
+  width: 180rem;
+  height: 162rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 5.4s linear infinite;
+  z-index: 46;
+}
+#galaxy span#planet-18::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(19) {
+  width: 190rem;
+  height: 171rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 5.7s linear infinite;
+  z-index: 45;
+}
+#galaxy span#planet-19::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(20) {
+  width: 200rem;
+  height: 180rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 6s linear infinite;
+  z-index: 44;
+}
+#galaxy span#planet-20::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(21) {
+  width: 210rem;
+  height: 189rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 6.3s linear infinite;
+  z-index: 43;
+}
+#galaxy span#planet-21::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(22) {
+  width: 220rem;
+  height: 198rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 6.6s linear infinite;
+  z-index: 42;
+}
+#galaxy span#planet-22::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(23) {
+  width: 230rem;
+  height: 207rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 6.9s linear infinite;
+  z-index: 41;
+}
+#galaxy span#planet-23::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(24) {
+  width: 240rem;
+  height: 216rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 7.2s linear infinite;
+  z-index: 40;
+}
+#galaxy span#planet-24::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(25) {
+  width: 250rem;
+  height: 225rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 7.5s linear infinite;
+  z-index: 39;
+}
+#galaxy span#planet-25::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(26) {
+  width: 260rem;
+  height: 234rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 7.8s linear infinite;
+  z-index: 38;
+}
+#galaxy span#planet-26::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(27) {
+  width: 270rem;
+  height: 243rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 8.1s linear infinite;
+  z-index: 37;
+}
+#galaxy span#planet-27::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(28) {
+  width: 280rem;
+  height: 252rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 8.4s linear infinite;
+  z-index: 36;
+}
+#galaxy span#planet-28::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(29) {
+  width: 290rem;
+  height: 261rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 8.7s linear infinite;
+  z-index: 35;
+}
+#galaxy span#planet-29::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(30) {
+  width: 300rem;
+  height: 270rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 9s linear infinite;
+  z-index: 34;
+}
+#galaxy span#planet-30::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(31) {
+  width: 310rem;
+  height: 279rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 9.3s linear infinite;
+  z-index: 33;
+}
+#galaxy span#planet-31::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(32) {
+  width: 320rem;
+  height: 288rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 9.6s linear infinite;
+  z-index: 32;
+}
+#galaxy span#planet-32::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(33) {
+  width: 330rem;
+  height: 297rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 9.9s linear infinite;
+  z-index: 31;
+}
+#galaxy span#planet-33::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(34) {
+  width: 340rem;
+  height: 306rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 10.2s linear infinite;
+  z-index: 30;
+}
+#galaxy span#planet-34::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(35) {
+  width: 350rem;
+  height: 315rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 10.5s linear infinite;
+  z-index: 29;
+}
+#galaxy span#planet-35::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(36) {
+  width: 360rem;
+  height: 324rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 10.8s linear infinite;
+  z-index: 28;
+}
+#galaxy span#planet-36::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(37) {
+  width: 370rem;
+  height: 333rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 11.1s linear infinite;
+  z-index: 27;
+}
+#galaxy span#planet-37::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(38) {
+  width: 380rem;
+  height: 342rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 11.4s linear infinite;
+  z-index: 26;
+}
+#galaxy span#planet-38::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(39) {
+  width: 390rem;
+  height: 351rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 11.7s linear infinite;
+  z-index: 25;
+}
+#galaxy span#planet-39::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(40) {
+  width: 400rem;
+  height: 360rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 12s linear infinite;
+  z-index: 24;
+}
+#galaxy span#planet-40::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(41) {
+  width: 410rem;
+  height: 369rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 12.3s linear infinite;
+  z-index: 23;
+}
+#galaxy span#planet-41::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(42) {
+  width: 420rem;
+  height: 378rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 12.6s linear infinite;
+  z-index: 22;
+}
+#galaxy span#planet-42::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(43) {
+  width: 430rem;
+  height: 387rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 12.9s linear infinite;
+  z-index: 21;
+}
+#galaxy span#planet-43::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(44) {
+  width: 440rem;
+  height: 396rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 13.2s linear infinite;
+  z-index: 20;
+}
+#galaxy span#planet-44::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(45) {
+  width: 450rem;
+  height: 405rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 13.5s linear infinite;
+  z-index: 19;
+}
+#galaxy span#planet-45::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(46) {
+  width: 460rem;
+  height: 414rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 13.8s linear infinite;
+  z-index: 18;
+}
+#galaxy span#planet-46::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(47) {
+  width: 470rem;
+  height: 423rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 14.1s linear infinite;
+  z-index: 17;
+}
+#galaxy span#planet-47::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(48) {
+  width: 480rem;
+  height: 432rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 14.4s linear infinite;
+  z-index: 16;
+}
+#galaxy span#planet-48::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(49) {
+  width: 490rem;
+  height: 441rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 14.7s linear infinite;
+  z-index: 15;
+}
+#galaxy span#planet-49::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(50) {
+  width: 500rem;
+  height: 450rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 15s linear infinite;
+  z-index: 14;
+}
+#galaxy span#planet-50::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(51) {
+  width: 510rem;
+  height: 459rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 15.3s linear infinite;
+  z-index: 13;
+}
+#galaxy span#planet-51::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(52) {
+  width: 520rem;
+  height: 468rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 15.6s linear infinite;
+  z-index: 12;
+}
+#galaxy span#planet-52::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(53) {
+  width: 530rem;
+  height: 477rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 15.9s linear infinite;
+  z-index: 11;
+}
+#galaxy span#planet-53::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(54) {
+  width: 540rem;
+  height: 486rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 16.2s linear infinite;
+  z-index: 10;
+}
+#galaxy span#planet-54::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(55) {
+  width: 550rem;
+  height: 495rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 16.5s linear infinite;
+  z-index: 9;
+}
+#galaxy span#planet-55::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(56) {
+  width: 560rem;
+  height: 504rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 16.8s linear infinite;
+  z-index: 8;
+}
+#galaxy span#planet-56::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(57) {
+  width: 570rem;
+  height: 513rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 17.1s linear infinite;
+  z-index: 7;
+}
+#galaxy span#planet-57::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(58) {
+  width: 580rem;
+  height: 522rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 17.4s linear infinite;
+  z-index: 6;
+}
+#galaxy span#planet-58::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(59) {
+  width: 590rem;
+  height: 531rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 17.7s linear infinite;
+  z-index: 5;
+}
+#galaxy span#planet-59::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(60) {
+  width: 600rem;
+  height: 540rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 18s linear infinite;
+  z-index: 4;
+}
+#galaxy span#planet-60::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(61) {
+  width: 610rem;
+  height: 549rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 18.3s linear infinite;
+  z-index: 3;
+}
+#galaxy span#planet-61::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(62) {
+  width: 620rem;
+  height: 558rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 18.6s linear infinite;
+  z-index: 2;
+}
+#galaxy span#planet-62::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}
+#galaxy span:nth-child(63) {
+  width: 630rem;
+  height: 567rem;
+  background: rgba(255, 0, 0, 0.03);
+  animation: circulate 18.9s linear infinite;
+  z-index: 1;
+}
+#galaxy span#planet-63::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1rem solid #deff36;
+  border-radius: 50%;
+  z-index: 1;
+}/*# sourceMappingURL=style.css.map */
